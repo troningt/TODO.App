@@ -3,9 +3,6 @@ spring:
     url: jdbc:mysql://localhost:3306/todoapp?useSLL=false&serverTimezone=UTC&useLegacyDateTimeCode=false
     username: root
     password:
-
-#Show sql queries
-spring:
   jpa:
     show-sql: true
     hibernate:
