@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/todoappdev?useSLL=false&serverTimezone=UTC&useLegacyDateTimeCode=false
+    url: jdbc:mysql://localhost:3306/todoapp?useSLL=false&serverTimezone=UTC&useLegacyDateTimeCode=false
     username: root
     password:
   jpa:
