@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  profile:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/troningt/TODO.App
+          repos:
+            prod-properies-repo:
+              uri: https://github.com/troningt/TODO.App
+              pattern: todolist/prod
+              search-paths:
+                - spring-cloud-config-server-setup/configs-location/{profile}
+
+            any-request-repo:
+              uri: https://github.com/troningt/TODO.App
+              pattern: todolist*/*
+              search-paths:
+                - spring-cloud-config-server-setup/configs-location/{application}/{profile}

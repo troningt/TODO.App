@@ -1,0 +1,29 @@
+###
+GET http://localhost:8080/taskEntity/listTasks
+
+###
+POST http://localhost:8080/taskEntity/create
+Content-Type: application/json
+
+{
+  "descriptionTask": "Tarea a realizar 3",
+  "type": 3
+}
+
+###
+DELETE http://localhost:8080/taskEntity/delete/1
+
+###
+GET http://localhost:8080/taskEntity/detail/2
+
+###
+GET http://localhost:8080/taskEntity/detailDescription/Tarea a realizar 2
+
+###
+PUT http://localhost:8080/taskEntity/updateById/2
+Content-Type: application/json
+
+{
+  "descriptionTask": "Tarea a realizar 2.1",
+  "type": 0
+}
